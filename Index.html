@@ -11,19 +11,77 @@
 </head>
 
 <body>
+    
     <div class="greetings">
         <span>H</span>
         <span>o</span>
         <span>l</span>
-        <span>a</span>
-        <span>!</span>
+        <span>i</span>
+        <span>:</span>
+        <span>3</span>
     </div>
-    <div class="description">
-        <span> Para ti sofia :3 </span>
-    </div>
+ 
+    <style>
+ 
+        .hearth {
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            position: relative;
+            transform: rotate(45deg);
+            box-shadow: -20px 20px 150px #f20404;
+            animation: palpitar 0.5s linear infinite alternate;
+        }
+        .contenido {
+            position: fixed;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+    
+        h1 {
+            color: white;}
+        h2 {
+            color: white;
+        }
+    
+    @keyframes palpitar {
+        0%{transform: rotate(45deg) scale(1.10);}
+        80%{transform: rotate(45deg) scale(1.0);}
+        100%{transform: rotate(45deg) scale(0.8);}
+    }
+    
+        .hearth::before {
+            content: "";
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            right: 50%;
+            border-radius: 50%;
+            box-shadow: 20px 20px 150px #f20404;
+    
+        }
+    
+        .hearth::after {
+            content: "";
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            top: -50%;
+            border-radius: 50%;
+            box-shadow: 20px 20px 150px #f20404;
+            
+        }
+        </style>
+    
+    <body>
+        <div class="hearth"></div>
+        <div class="contenido"><h1> te amo mushoooooo </h1></div>
+    
     <div class="button">
         <button class="botones">
-            <a href="flower.html" style="color: #fff;">Presiona Para que mires tu regalo :3</a>
+            <a href="flower.html" style="color: #fff;">Presiona Para que milesh tu regalo :3</a>
         </button>
     </div>
 
